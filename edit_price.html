@@ -127,13 +127,10 @@
         var activeHover;
         $('.shown span').on('mouseenter',
             function () {
-                //return if it's the same button being hovered
                 if ($(this).index() === activeHover) {
                     return;
                 }
-                //remove classes from other buttons, put on new active one
                 $('.shown span').removeClass('conrtentHover');
-                //add class for li element
                 $(this).addClass('conrtentHover');
             });
     })(jQuery);
